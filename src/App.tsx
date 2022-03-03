@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import { Button } from '@mui/material';
+import CssBaseline from '@mui/material/CssBaseline';
+import { ThemeProvider } from '@mui/material/styles';
+import themeDark from './styles/themeDark';
+import themeLight from './styles/themeLight';
+import ProfilePic from './atomicDesign/atoms/ProfilePic';
 
-function App() {
+const App = () => {
+  const [light, setLight] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={light ? themeLight : themeDark}>
+      <CssBaseline />
+      <Button
+        onClick={() => setLight((prev) => !prev)}
+      >
+        Toggle Theme
+      </Button>
+      <ProfilePic />
+    </ThemeProvider>
   );
-}
+};
 
 export default App;

@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### `nvm use`
+manages the node version, you may need to install the version of node to properly run this app
+
+
 ## Available Scripts
 
 In the project directory, you can run:
