@@ -1,12 +1,14 @@
 import React, { useMemo } from 'react';
 import CodeIcon from '@mui/icons-material/Code';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const nameToIcon = {
   codeIcon: <CodeIcon />,
+  githubIcon: <GitHubIcon />,
 };
 
 interface IIconsProps {
-  name: 'codeIcon';
+  name: 'codeIcon' | 'githubIcon';
 }
 
 const Icons = ({ name }: IIconsProps) => {
