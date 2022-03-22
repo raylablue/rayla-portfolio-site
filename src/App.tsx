@@ -18,9 +18,7 @@ const App = () => {
 
       <Box sx={{ flexGrow: 1, mx: 'auto', width: 800 }} px={4}>
         <Box mb={4}>
-          <Button
-            onClick={() => setLight((prev) => !prev)}
-          >
+          <Button onClick={() => setLight((prev) => !prev)}>
             Toggle Theme
           </Button>
         </Box>

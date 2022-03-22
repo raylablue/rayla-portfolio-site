@@ -4,10 +4,7 @@ import Icons from '../atoms/Icons';
 
 const SocialIcons = () => (
   <div>
-    <Link
-      target="_blank"
-      href="https://github.com/raylablue"
-    >
+    <Link target="_blank" href="https://github.com/raylablue">
       <Icons name="githubIcon" />
     </Link>
     <br />
@@ -18,10 +15,7 @@ const SocialIcons = () => (
       LinkedIn Link
     </Link>
     <br />
-    <Link
-      target="_blank"
-      href="https://twitter.com/RaylaDev"
-    >
+    <Link target="_blank" href="https://twitter.com/RaylaDev">
       Twitter Link
     </Link>
   </div>

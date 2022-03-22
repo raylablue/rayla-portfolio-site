@@ -14,9 +14,7 @@ interface IIconsProps {
 const Icons = ({ name }: IIconsProps) => {
   const printIcon = useMemo(() => nameToIcon[name], [name]);
 
-  return (
-    <div>{printIcon}</div>
-  );
+  return <div>{printIcon}</div>;
 };
 
 export default Icons;

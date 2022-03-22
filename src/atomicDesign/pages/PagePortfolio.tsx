@@ -19,7 +19,6 @@ const PagePortfolio = () => (
         <div>Portfolio Item 3</div>
       </div>
     </Grid>
-
   </Grid>
 );
 
