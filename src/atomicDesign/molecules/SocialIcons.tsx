@@ -5,12 +5,10 @@ import Icon from '../atoms/Icon';
 const SocialIcons = () => (
   <div>
     <Link
-      color="secondary"
       target="_blank"
       href="https://github.com/raylablue"
     >
       <Icon size="large" name="githubIcon" />
-      test
     </Link>
     <br />
     <Link

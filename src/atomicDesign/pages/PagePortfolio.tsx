@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid } from '@mui/material';
 import ProfilePic from '../atoms/ProfilePic/ProfilePic';
 import SocialIcons from '../molecules/SocialIcons';
+import PortfolioItems from '../molecules/PortfolioItems';
 
 const PagePortfolio = () => (
   <Grid container spacing={2}>
@@ -13,10 +14,7 @@ const PagePortfolio = () => (
 
     <Grid item md={6}>
       <div>
-        this will be a list of my portfolio items
-        <div>Portfolio Item 1</div>
-        <div>Portfolio Item 2</div>
-        <div>Portfolio Item 3</div>
+        <PortfolioItems />
       </div>
     </Grid>
   </Grid>
