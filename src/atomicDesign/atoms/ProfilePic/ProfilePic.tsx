@@ -1,12 +1,12 @@
 import React from 'react';
-import { Box } from '@mui/material';
 import './ProfilePic.css';
 
-const ProfilePic = () => (
-  <Box>
-    {/* eslint-disable-next-line global-require */}
-    <img alt="Ray Blue" src="assets/Ray.jpeg" className="photo" />
-  </Box>
+interface IProfilePicArgs {
+  style?: object;
+}
+
+const ProfilePic = ({ style }: IProfilePicArgs) => (
+  <img alt="Ray Blue" src="assets/Ray.jpeg" className="photo" style={style} />
 );
 
 export default ProfilePic;

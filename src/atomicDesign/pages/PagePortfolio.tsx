@@ -5,17 +5,15 @@ import SocialIcons from '../molecules/SocialIcons';
 import PortfolioItems from '../molecules/PortfolioItems';
 
 const PagePortfolio = () => (
-  <Grid container spacing={2}>
-    <Grid item xs={8} md={4}>
-      <ProfilePic />
+  <Grid container justifyContent="center" alignItems="center">
+    <Grid item md={8} xs={12}>
+      <ProfilePic style={{ margin: '0 auto' }} />
+
       <SocialIcons />
-      <div>this will be a link to my resume</div>
     </Grid>
 
-    <Grid item md={6}>
-      <div>
-        <PortfolioItems />
-      </div>
+    <Grid item md={4} xs={12}>
+      <PortfolioItems />
     </Grid>
   </Grid>
 );

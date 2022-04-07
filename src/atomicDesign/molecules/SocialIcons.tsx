@@ -1,13 +1,10 @@
 import React from 'react';
-import { Link } from '@mui/material';
+import { Box, Link } from '@mui/material';
 import Icon from '../atoms/Icon';
 
 const SocialIcons = () => (
-  <div>
-    <Link
-      target="_blank"
-      href="https://github.com/raylablue"
-    >
+  <Box>
+    <Link target="_blank" href="https://github.com/raylablue">
       <Icon size="large" name="githubIcon" />
     </Link>
     <br />
@@ -21,7 +18,7 @@ const SocialIcons = () => (
     <Link target="_blank" href="https://twitter.com/RaylaDev">
       <Icon size="large" name="twitterIcon" />
     </Link>
-  </div>
+  </Box>
 );
 
 export default SocialIcons;
