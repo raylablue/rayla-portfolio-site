@@ -3,14 +3,17 @@ import { Link } from '@mui/material';
 
 const PortfolioItems = () => (
   <div>
-    <Link href="https://promptdeck.com/">Portfolio Item 1</Link>
+    <Link href="https://promptdeck.com/" target="_blank">
+      Prompt Deck
+    </Link>
+
     <br />
-    <Link href="https://raylablue.github.io/my-movies/#/">
-      Portfolio Item 2
+    <Link href="https://raylablue.github.io/my-movies/#/" target="_blank">
+      Movie Gallery
     </Link>
     <br />
-    <Link href="https://raylablue.github.io/GameDevGrit/">
-      Portfolio Item 3
+    <Link href="https://raylablue.github.io/GameDevGrit/" target="_blank">
+      Game Dev Grit
     </Link>
   </div>
 );
