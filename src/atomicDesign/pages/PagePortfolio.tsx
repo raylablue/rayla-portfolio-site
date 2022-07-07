@@ -8,7 +8,6 @@ const PagePortfolio = () => (
   <Grid container justifyContent="center" alignItems="center">
     <Grid item md={8} xs={12}>
       <ProfilePic style={{ margin: '0 auto' }} />
-
       <SocialIcons />
     </Grid>
 
