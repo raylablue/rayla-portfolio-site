@@ -1,5 +1,6 @@
 import React from 'react';
 import './PortfolioImage.css';
+import { Box } from '@mui/material';
 
 interface IPortfolioImageProps {
   src: string;
@@ -7,9 +8,9 @@ interface IPortfolioImageProps {
 }
 
 const PortfolioImage = ({ src, alt }: IPortfolioImageProps) => (
-  <div className="container">
+  <Box className="container">
     <img alt={alt} src={src} className="image" />
-  </div>
+  </Box>
 );
 
 export default PortfolioImage;

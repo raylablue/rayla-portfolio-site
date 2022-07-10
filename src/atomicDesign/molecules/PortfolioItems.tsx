@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from '@mui/material';
+import { Link, Box } from '@mui/material';
 import PortfolioImage from '../atoms/ PortfolioImage/PortfolioImage';
 
 const PortfolioItems = () => (
-  <div className="m.pi_test">
-    <Link href="https://promptdeck.com/" target="_blank">
+  <Box>
+    <Link href="https://promptdeck.com/" target="_blank" color="inherit">
       Prompt Deck
       <PortfolioImage
         alt="screenshot of prompt deck website with cards rotated to generate prompt scenario"
@@ -13,7 +13,11 @@ const PortfolioItems = () => (
     </Link>
 
     <br />
-    <Link href="https://raylablue.github.io/my-movies/#/" target="_blank">
+    <Link
+      href="https://raylablue.github.io/my-movies/#/"
+      target="_blank"
+      color="inherit"
+    >
       Movie Gallery
       <PortfolioImage
         alt="srceenshot of a movie gallery with a search bar prompting user to search for movies in database"
@@ -21,14 +25,18 @@ const PortfolioItems = () => (
       />
     </Link>
     <br />
-    <Link href="https://raylablue.github.io/GameDevGrit/" target="_blank">
+    <Link
+      href="https://raylablue.github.io/GameDevGrit/"
+      target="_blank"
+      color="inherit"
+    >
       Game Dev Grit
       <PortfolioImage
         alt="screenshot of a indie game development podcast with a game prototype image below the header"
         src="assets/GameDevPodcast.png"
       />
     </Link>
-  </div>
+  </Box>
 );
 
 export default PortfolioItems;

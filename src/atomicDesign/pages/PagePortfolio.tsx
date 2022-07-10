@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import ProfilePic from '../atoms/ProfilePic/ProfilePic';
 import SocialIcons from '../molecules/SocialIcons';
 import PortfolioItems from '../molecules/PortfolioItems';
@@ -12,7 +12,9 @@ const PagePortfolio = () => (
     </Grid>
 
     <Grid item md={4} xs={12}>
-      <PortfolioItems />
+      <Box display="flex" alignItems="center" justifyContent="center">
+        <PortfolioItems />
+      </Box>
     </Grid>
   </Grid>
 );
