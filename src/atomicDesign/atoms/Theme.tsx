@@ -20,6 +20,8 @@ const Theme = () => {
       <Box sx={{ flexGrow: 1, mx: 'auto', width: 800 }} px={4}>
         <Box mb={4}>
           <Button
+            variant="outlined"
+            color="inherit"
             style={{ color: textThemeColor }}
             startIcon={<ContrastIcon />}
             onClick={() => setLight((prev) => !prev)}

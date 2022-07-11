@@ -3,7 +3,7 @@ import { Link, Box } from '@mui/material';
 import PortfolioImage from '../atoms/ PortfolioImage/PortfolioImage';
 
 const PortfolioItems = () => (
-  <Box>
+  <Box mt={6}>
     <Link href="https://promptdeck.com/" target="_blank" color="inherit">
       Prompt Deck
       <PortfolioImage
