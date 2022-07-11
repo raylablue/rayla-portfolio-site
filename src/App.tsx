@@ -11,10 +11,10 @@ import NavBar from './atomicDesign/organisms/NavBar';
 const raylaTheme = createTheme({
   palette: {
     primary: {
-      main: '#544479',
+      main: '#63528a',
     },
-    info: {
-      main: '#6845a8',
+    secondary: {
+      main: '#1c1f46',
     },
   },
 });

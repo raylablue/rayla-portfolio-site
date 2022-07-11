@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Box, Button } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
+import ContrastIcon from '@mui/icons-material/Contrast';
 import themeLight from '../../styles/themeLight';
 import themeDark from '../../styles/themeDark';
 
@@ -20,6 +21,7 @@ const Theme = () => {
         <Box mb={4}>
           <Button
             style={{ color: textThemeColor }}
+            startIcon={<ContrastIcon />}
             onClick={() => setLight((prev) => !prev)}
           >
             Toggle Theme

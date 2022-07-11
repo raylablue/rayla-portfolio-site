@@ -5,7 +5,7 @@ import Theme from '../atoms/Theme';
 const NavBar = () => (
   <AppBar position="static">
     <Toolbar>
-      <Typography>Rayla.dev</Typography>
+      <Typography color="secondary">Rayla.dev</Typography>
       <Theme />
     </Toolbar>
   </AppBar>
