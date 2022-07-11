@@ -3,12 +3,14 @@ import { Box, Grid } from '@mui/material';
 import ProfilePic from '../atoms/ProfilePic/ProfilePic';
 import SocialIcons from '../molecules/SocialIcons';
 import PortfolioItems from '../molecules/PortfolioItems';
+import AboutBlurb from '../atoms/AboutBlurb';
 
 const PagePortfolio = () => (
   <Grid container justifyContent="center" alignItems="center">
     <Grid item md={8} xs={12}>
       <ProfilePic style={{ margin: '0 auto' }} />
       <SocialIcons />
+      <AboutBlurb />
     </Grid>
 
     <Grid item md={4} xs={12}>
